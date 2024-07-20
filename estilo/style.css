@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Inter-VariableFont_slnt,wght.ttf';
+    src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+:root{
+    --cor1: hsl(0, 0%, 20%);
+    --cor2: hsl(0, 0%,12%);
+    --cor3: hsl(0, 0%, 8%);
+    --fontepadrao: 'Inter-VariableFont_slnt,wght.ttf';
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fontepadrao);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: var(--cor2);
+    min-width: 300px;
+    max-width: 475px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    
+    border-radius: 15px;
+}
+
+img{
+    border-radius: 50%;
+    width: 80px;
+    display: block; 
+    margin: auto; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content > h1{
+    font-weight: normal;
+    color: hsl(0, 0%, 100%);
+}
+
+.content > h3{
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.content > p{
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    padding: 20px 0px;
+    
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 330px;
+}
+
+.bottom > h4{
+    background-color: hsl(0, 0%, 20%);
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.bottom > h4:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: var(--cor1);
+}
+
